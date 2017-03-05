@@ -1,0 +1,116 @@
+html{
+  background: black url(images/bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+body{
+  background-color: none;
+  color: white;
+  /*margin: 0 auto;
+  max-width: 250px;*/
+  font-family: "Courier New", Courier, Monaco, sans-serif;
+  font-size: 12px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  }
+  li{
+    padding-top: 12px;
+  }
+  ul a:hover{
+    color: white;
+    background-color: red;
+  }
+.fill{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: fill 4s forwards;
+}
+@keyframes fill{
+from{
+  opacity: 1;
+}
+to{
+  opacity: 0;
+}
+}
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}
+
+.header {
+  /*margin-top: 100px;*/
+}
+.main a:hover{
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.main{
+  margin-top: 80px;
+}
+.footer {
+  margin-top: 100px;
+}
+p{
+  padding-top: 12px;
+}
+.footer a{
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer img{
+  opacity: 0.3;
+  display: inline-block;
+  max-width: 20px;
+}
+.footer img:hover{
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+
+
+
+
+/*стили iPhone5*/
+@media screen and (max-width:320px){
+  .header{
+    margin-top: 60px;
+  }
+  .main{
+    margin-top: 50px;
+  }
+  .footer{
+    margin-top: 60px;
+  }
+  body{
+    max-width: 200px;
+  }
+  }
+
+}
